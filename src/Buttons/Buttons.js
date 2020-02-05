@@ -1,14 +1,15 @@
 import React from 'react'
 import "./Buttons.css"
 
+
 const Buttons = (props)=>{
     
- const random = Math.floor((Math.random() * 10));
-    console.log(random)
 return (
     <div className="buttons">
         <button onClick={() => {
-         
+         props.setDay(props.randomDay)
+         props.setMonth(props.randomMonth)
+        //  props.setYear(props.randomYear)
         }}
         className= "prev-Pic">
             Random Pic!!

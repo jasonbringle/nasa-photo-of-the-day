@@ -2,10 +2,19 @@
     display:flex;
     justify-content: center;
     font-style:italic;
+    color:white;
     }
 
 .explain{
     text-align: start;
     margin:2rem;
     border-bottom: 1px solid black;
+    color:white;
+
   }
+
+.title{
+    border-top: 1px solid black;
+    color:white;
+
+}

@@ -7,21 +7,38 @@ import Image from './Image/Image'
 
 
 function App() {
-  const [picData, setPicData] = useState([])
+  const [picData, setPicData] = useState([]);
+  const [day, setDay] = useState("01");
+  const [month, setMonth] =useState("01");
+  const [year, setYear] = useState("2019")
+
+  const randomDay = Math.floor((Math.random() * 30) + 1);
+  const randomMonth = Math.floor((Math.random() * 12) + 1);
+  // const randomYear = Math.floor((Math.random() * 2020)+ 1);
+// console.log('rando year', randomYear)
+
 
   useEffect(() => {
     axios
-        .get("https://api.nasa.gov/planetary/apod?api_key=gYyisI1LHqwbW7zSloS0gQx7F0RTEEACvdQIbem3")
+        .get(`https://api.nasa.gov/planetary/apod?api_key=gYyisI1LHqwbW7zSloS0gQx7F0RTEEACvdQIbem3&date=${year}-${month}-${day}`)
         .then(response => {setPicData(response.data);
         })
         .catch(error => console.log(error));
-    },[]);
+    },[year,month,day]);
     console.log('display picData', picData);
 
   
   return (
     <div className="App">
-      <Buttons />
+      <Buttons 
+      setDay={setDay}
+      setMonth={setMonth}
+      setYear={setYear}
+      randomDay={randomDay}
+      randomMonth={randomMonth}
+      // randomYear={randomYear}
+      useState={useState}
+      />
       <Image 
       picData={picData}
       />
