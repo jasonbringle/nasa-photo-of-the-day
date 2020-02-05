@@ -10,12 +10,18 @@ function App() {
   const [picData, setPicData] = useState([]);
   const [day, setDay] = useState("01");
   const [month, setMonth] =useState("01");
-  const [year, setYear] = useState("2019")
+  const [year, setYear] = useState("2020")
 
   const randomDay = Math.floor((Math.random() * 30) + 1);
   const randomMonth = Math.floor((Math.random() * 12) + 1);
-  // const randomYear = Math.floor((Math.random() * 2020)+ 1);
-// console.log('rando year', randomYear)
+  
+  function randomYear(){
+    
+    return Math.floor(Math.random() * (2019 - 1997 + 1) + 1997);
+  };
+
+  console.log(randomYear(2013,2019))
+  
 
 
   useEffect(() => {
@@ -36,7 +42,7 @@ function App() {
       setYear={setYear}
       randomDay={randomDay}
       randomMonth={randomMonth}
-      // randomYear={randomYear}
+      randomYear={randomYear}
       useState={useState}
       />
       <Image 

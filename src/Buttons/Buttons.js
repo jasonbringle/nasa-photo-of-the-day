@@ -9,9 +9,9 @@ return (
         <button onClick={() => {
          props.setDay(props.randomDay)
          props.setMonth(props.randomMonth)
-        //  props.setYear(props.randomYear)
+         props.setYear(props.randomYear())
         }}
-        className= "prev-Pic">
+        className= "random-pic">
             Random Pic!!
             </button>
     </div>
