@@ -1,0 +1,11 @@
+.date{
+    display:flex;
+    justify-content: center;
+    font-style:italic;
+    }
+
+.explain{
+    text-align: start;
+    margin:2rem;
+    border-bottom: 1px solid black;
+  }

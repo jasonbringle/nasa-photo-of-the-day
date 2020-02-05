@@ -1,0 +1,10 @@
+button{
+    width: 20%;
+    height: 40px;
+    box-shadow: lightgray;
+    background-color: lightblue;
+}
+
+.buttons{
+    margin: 2rem;
+}

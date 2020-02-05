@@ -1,19 +1,19 @@
 import React from 'react'
-const Description = (props)=>{
+import './Description.css'
 
-    console.log(props);
+const Description = (props)=>{
  
 return (
 
     <div className="main-Desc">
         <div className='date'>
-            <p>{props.date}</p>
+            <p>{props.picData.date}</p>
         </div>
         <div className='title'>
-            <p>{props.title}</p>
+            <h2>{props.picData.title}</h2>
         </div>
         <div className='explain'>
-            <p>{props.explanation}</p>
+            <p>{props.picData.explanation}</p>
         </div>
         
     </div>

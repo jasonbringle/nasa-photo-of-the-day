@@ -15,8 +15,14 @@ code {
 header{
   display:flex;
   justify-content: center;
+  border-bottom: 1px solid black;
+  background-color:lightblue;
+
 }
 
-.date{
-display:flex;
+h1{
+  font-size: 3rem;
 }
+
+
+

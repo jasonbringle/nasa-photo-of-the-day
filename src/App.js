@@ -1,18 +1,17 @@
 import React, { useState,useEffect } from "react";
 import "./App.css";
-import Buttons from './Buttons';
-import Description from './Description';
+import Buttons from './Buttons/Buttons';
+import Description from './Description/Description';
 import axios from 'axios';
-import Image from './Image'
+import Image from './Image/Image'
 
 
 function App() {
-  const [picData, setPicData] = useState()
-
+  const [picData, setPicData] = useState([])
 
   useEffect(() => {
     axios
-        .get("https://api.nasa.gov/planetary/apod?api_key=WDbqkGtElcGRZbYES31GoTaRLkf2LXa5LFW8V7L5")
+        .get("https://api.nasa.gov/planetary/apod?api_key=gYyisI1LHqwbW7zSloS0gQx7F0RTEEACvdQIbem3")
         .then(response => {setPicData(response.data);
         })
         .catch(error => console.log(error));
