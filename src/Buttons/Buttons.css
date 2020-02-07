@@ -1,4 +1,4 @@
-button{
+/* button{
     width: 40%;
     height: 40px;
     box-shadow: 5px 10px 18px rgb(31, 31, 31);
@@ -8,9 +8,9 @@ button{
     font-size: 1rem;
     outline: none;
 
-}
+} */
 
-button:hover{
+/* button:hover{
     background-color: rgb(91, 201, 251);
     animation: shake 2s;
     animation-iteration-count: infinite;
@@ -38,9 +38,9 @@ button:active{
     height: 30px;
 
 
-}
+} */
 
-.buttons{
+/* .button{
     display:flex;
     justify-content: center;
 
@@ -48,4 +48,4 @@ button:active{
     height:25px;
     margin: 2rem;
 
-}
+} */
